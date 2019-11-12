@@ -24,5 +24,5 @@ def mergesort(lst):
  
     return merge(left,right)  
  
-arr = []
+arr = list(map(int, input().split()))
 print(mergesort(arr)) 
