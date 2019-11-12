@@ -8,7 +8,7 @@ def bins(lst,index):
     return ""
 n=int(input())
 m=int(input())
-nlist=[]
-mlist=[]
+nlist=arr = list(map(int, input().split()))
+mlist=arr = list(map(int, input().split()))
 for i in mlist:
   print(bins(nlist,i),end=" ")
