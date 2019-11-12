@@ -10,16 +10,16 @@ def partition(arr,low,high):
 	arr[i+1],arr[high] = arr[high],arr[i+1] 
 	return ( i+1 ) 
 
-def threeway(arr,low,high): 
+def threewaypartition(arr,low,high): 
 	if low < high: 
 		pi = partition(arr,low,high) 
-		threeway(arr, low, pi-1) 
-		threeway(arr, pi+1, high) 
+		threewaypartition(arr, low, pi-1) 
+		threewaypartition(arr, pi+1, high) 
 
 # Driver code to test above 
 arr = list(map(int, input().split()))
 n = int(input()) 
-threeway(arr,0,n-1) 
+threewaypartition(arr,0,n-1) 
 
 for i in range(n): 
 	print ("%d" %arr[i]), 
