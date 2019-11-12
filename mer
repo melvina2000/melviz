@@ -27,8 +27,8 @@ def mergeArrays(arr1, arr2, n1, n2):
 	for i in range(n1 + n2): 
 		print(str(arr3[i]), end = " ") 
     
-arr1 = [] 
-n1 = len(arr1) 
-arr2 = [] 
-n2 = len(arr2) 
-mergeArrays(arr1, arr2, n1, n2); 
+n1 =  int(input())
+arr1 = list(map(int, input().split()))
+n2 =  int(input()) 
+arr2 = list(map(int, input().split()))
+print (mergeArrays(arr1, arr2, n1, n2))
