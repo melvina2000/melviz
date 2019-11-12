@@ -1,0 +1,14 @@
+import bisect
+def bins(lst,index):
+  i=bisect.bisect_left(lst,index)
+  if i!=len(lst) and lst[i]==index:
+    print(i+1,end="")
+  else:
+    print(-1,end="")
+    return ""
+n=int(input())
+m=int(input())
+nlist=[]
+mlist=[]
+for i in mlist:
+  print(bins(nlist,i),end=" ")
