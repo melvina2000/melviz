@@ -28,5 +28,5 @@ def printMajority(A):
 	else: 
 		print("-1") 
 
-
-printMajority([])
+A=list(map(int, input().split()))
+print (printMajority([A]))
