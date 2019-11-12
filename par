@@ -1,0 +1,18 @@
+def partition(arr,n):
+    k=[]
+    kr=[]
+    kl=[]
+    for i in range(n):
+        if i==0:
+            k.append(arr[i])
+        elif arr[i]>arr[0]:
+            kr.append(arr[i])
+
+        elif arr[i]<arr[0]:
+            kl.append(arr[i])
+    return(kl+k+kr)
+
+n = int(input())
+arr = list(map(int, input().split()))
+quickSort(arr, n)
+print(*arr)
