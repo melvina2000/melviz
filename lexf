@@ -1,0 +1,4 @@
+import itertools as it
+def product(iters, n):
+    for comb in it.product(iters, repeat=n):
+        print(''.join(comb))
