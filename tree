@@ -1,0 +1,10 @@
+f = open(r'C:\Users\melvi_6dqb2kf\Downloads\rosalind_tree (1).txt', 'r')
+str1 = ' '
+mat = []
+while (str1 != ''):
+    str1 = f.readline().strip()
+    mat.append(str1)
+mat.remove('')
+n = int(mat[0])
+edge = n - len(mat)
+print(edge)
