@@ -30,6 +30,6 @@ cod = {
 l = []
 for i in range(0, len(str), 3):
     f = str[i:i+3]
-    b.append(f)
+    l.append(f)
 c = ''.join(cod[i] for i in l)
 print(c)
