@@ -42,7 +42,7 @@ def orf(sequence):
     return set(prolist)
 seqlist = []
 stseq = ''
-for line in open(r'C:\Users\melvi_6dqb2kf\Downloads\orfffff.txt'):
+for line in open(r'C:\Users\i_6dqb2kf\Downloads\orfffff.txt'):
     if line[0] == '>':
         if stseq != '':
             seqlist.append(stseq)
